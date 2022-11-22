@@ -1,0 +1,28 @@
+joueur1 = "X"
+joueur2 = "O"
+partieFinie = False
+
+ligne1 = ["N","N","N"]
+ligne2 = ["N","N","N"]
+ligne3 = ["N","N","N"]
+
+print("-----MORPION-----")
+print(ligne1)
+print(ligne2)
+print(ligne3)
+
+while(partieFinie = False):
+    print("Joueur 1 : choisissez une ligne")
+    choixLigne = input()
+    if (choixLigne<= 0 or choix > 3):
+        print("Erreur, choix invalide !")
+    if(choixLigne == 1):
+        print("Joueur 1 : choisissez une colonne")
+        choixColonne = input()
+    if (choixColonne <= 0 or choixColonne > 3):
+        print("Erreur, choix invalide !")
+        if(choixColonne == 1):
+            ligne1[0] = "O"
+            print(ligne1)
+            print(ligne2)
+            print(ligne3)
